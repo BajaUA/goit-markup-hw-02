@@ -9,6 +9,8 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--hero-color);
 }
 .link {
   text-decoration: none;
@@ -23,6 +25,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-color);
+  text-align: center;
 }
 
 .section-subtitle {
@@ -46,7 +49,7 @@ body {
 .header-navigation {
 }
 .header-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -54,7 +57,7 @@ body {
   text-transform: uppercase;
   color: var(--main-brand-color);
 }
-.header-logo span {
+.header-logo-color {
   color: var(--title-color);
 }
 .header-menu {
@@ -71,27 +74,29 @@ body {
   color: var(--menu-active-color);
 }
 .header-address {
+  font-style: normal;
 }
 .header-address-list {
 }
 .header-address-link {
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.header-address-link:active {
+.header-address-link:is(:hover, :focus, :active) {
   color: var(--menu-active-color);
 }
 
 /* *---------------------INDEX-MAIN----------------------- */
 .hero {
+  background-color: var(--title-color);
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--hero-color);
+  text-align: center;
 }
 .hero-btn {
   font-family: inherit;
@@ -123,12 +128,14 @@ body {
 .doing-item {
 }
 .team {
+  background-color: var(--footer-color);
 }
 .team-title {
 }
 .team-list {
 }
 .team-item {
+  background-color: var(--hero-color);
 }
 .team-subtitle {
 }
@@ -136,8 +143,11 @@ body {
 }
 
 /* *--------------------FOOTER------------- */
+.footer {
+  background-color: var(--title-color);
+}
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -146,7 +156,7 @@ body {
   text-transform: uppercase;
   color: var(--main-brand-color);
 }
-.footer-logo span {
+.footer-logo-color {
   color: var(--footer-color);
 }
 
@@ -157,9 +167,12 @@ body {
 }
 
 /** ---------------PORTFOLIO-MAIN------------------ */
-.portfolio-hero-list {
+.products {
+  background-color: var(--hero-color);
 }
-.portfolio-hero-btn {
+.products-btn-list {
+}
+.products-btn {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -170,15 +183,14 @@ body {
   cursor: pointer;
   background: var(--footer-color);
 }
-.portfolio-hero-btn:is(:hover, :focus) {
+.products-btn:is(:hover, :focus) {
   color: var(--hero-color);
   background: var(--menu-active-color);
-}
-.products {
 }
 .products-list {
 }
 .products-item {
+  background-color: var(--hero-color);
 }
 .products-link {
 }
