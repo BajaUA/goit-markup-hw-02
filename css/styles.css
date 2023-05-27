@@ -5,7 +5,7 @@
   --main-brand-color: #4d5ae5;
   --footer-color: #f4f4fd;
   --menu-active-color: #404bbf;
-  font-size: 16px;
+  --font-size: 16px;
 }
 body {
   font-family: 'Roboto', sans-serif;
