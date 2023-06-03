@@ -5,7 +5,7 @@
   --main-brand-color: #4d5ae5;
   --footer-color: #f4f4fd;
   --menu-active-color: #404bbf;
-  --font-size: 16px;
+  --main-font-size: 20px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -30,7 +30,7 @@ body {
 
 .section-subtitle {
   font-weight: 500;
-  font-size: 20px;
+  font-size: --main-font-size;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
